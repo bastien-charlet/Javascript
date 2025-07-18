@@ -1,0 +1,101 @@
+body {
+  font-family: "Georgia", serif;
+  background-color: #f9f5f0;
+  color: #4a403a;
+  max-width: 1500px;
+  margin: auto;
+  padding: 30px 25px;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.8em;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #6a534a;
+  text-shadow: 1px 1px 2px #dcd3ca;
+}
+
+section {
+  margin-bottom: 30px;
+  background: #fff8f2;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(106, 83, 74, 0.15);
+  border: 1px solid #e6d7ce;
+}
+
+input, button {
+  padding: 12px 15px;
+  margin: 6px 7px 15px 0;
+  font-size: 1em;
+  border-radius: 10px;
+  border: 1.5px solid #cbb5a7;
+  font-family: "Georgia", serif;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #a6785a;
+  background-color: #fff3e8;
+}
+
+button {
+  background-color: #a6785a;
+  color: #fff9f5;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(166, 120, 90, 0.3);
+}
+
+button:hover {
+  background-color: #8b6045;
+  box-shadow: 0 6px 12px rgba(139, 96, 69, 0.5);
+}
+
+.table-container {
+    display: flex; /* Utilise un modèle de boîte flexible */
+    gap: 20px; /* Espace entre les colonnes */
+}
+
+.table-container section {
+    flex: 1; /* Chaque section prend une part égale de l'espace disponible */
+}
+
+table {
+    width: 100%; /* Assure que les tableaux prennent toute la largeur de leur section */
+    border-collapse: collapse; /* Supprime les espaces entre les bordures des cellules */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+img.miniature,
+div.miniature {
+  width: 55px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid #cbb5a7;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(167, 121, 90, 0.2);
+}
+
+div.miniature.vide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2e7de;
+  color: #9c8b7c;
+  font-size: 1.3em;
+  font-style: italic;
+}

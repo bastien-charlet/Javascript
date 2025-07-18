@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Ma Bibliothèque</h1>
+
+    <h2>Livres disponibles</h2>
+    <ul id="availableBooks"></ul>
+
+    <h2>Livres indisponibles</h2>
+    <ul id="unavailableBooks"></ul>
+
+    <h2>Rechercher un livre</h2>
+    <input type="text" id="searchInputTitle" placeholder="Titre du livre">
+    <button onclick="searchByTitle(document.getElementById('searchInputTitle').value)">Rechercher</button>
+    <input type="text" id="searchInputYear" placeholder="Année du livre">
+    <button onclick="searchByYear(document.getElementById('searchInputYear').value)">Rechercher</button>
+    <input type="text" id="searchInputAuthor" placeholder="Auteur du livre">
+    <button onclick="searchByAuthor(document.getElementById('searchInputAuthor').value)">Rechercher</button>
+    <p id="searchResultTitle"></p>
+    <p id="searchResultYear"></p>
+    <p id="searchResultAuthor"></p>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
