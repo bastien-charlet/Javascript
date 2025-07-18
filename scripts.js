@@ -23,6 +23,20 @@ addBook({
     borrowed: false
 })
 
+function addNewBook(title, author, year, borrowed = false) {
+
+    const newBook = {
+        title: title,
+        author: author,
+        year: year,
+        borrowed: borrowed
+    };
+
+    library.push(newBook);
+
+    displayBooks();
+}
+
 function getAvailableBooks() {
     console.log('Les livres disponibles sont :');
     document.getElementById("availableBooks").innerHTML = '';

@@ -10,6 +10,18 @@
 
     <h1>Ma Bibliothèque</h1>
 
+    <h2>Ajouter un nouveau livre</h2>
+    <div>
+        <input type="text" id="newBookTitle" placeholder="Titre du livre">
+        <input type="text" id="newBookAuthor" placeholder="Auteur du livre">
+        <input type="text" id="newBookYear" placeholder="Année du livre">
+        <button onclick="addNewBook(
+            document.getElementById('newBookTitle').value,
+            document.getElementById('newBookAuthor').value,
+            document.getElementById('newBookYear').value
+        )">Ajouter le livre</button>
+    </div>
+
     <h2>Livres disponibles</h2>
     <ul id="availableBooks"></ul>
 
